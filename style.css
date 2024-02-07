@@ -1,0 +1,137 @@
+body{
+    position:relative;
+    margin:0;
+    padding:0;
+    background-image:url("baobab1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+}
+.title{
+    font-family:Arial;
+    color:white;
+    opacity:0.7;
+    animation-duration: 1s;
+    animation-name:title;
+    animation-iteration-count: 1;
+    text-shadow:10px 0 10px black;
+}
+div{
+    position:absolute;
+    margin:15px;
+    height:100px;
+    width:270px;
+    border-radius:10px;
+}
+.back{
+    border-radius:30px;
+    height:30px;
+    width:30px;
+    background-color:red;
+    left:85%;
+    display:none;
+}
+@keyframes title {
+    from{
+        color:rgb(102, 148, 255);
+        text-shadow:none;
+    }
+    to{
+        color:white;
+    }
+}
+@media only screen and (max-width: 480px) {
+    body {
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        margin: 0;
+        overflow: hidden;
+        animation: backgroundAnimation 30s infinite; /* Vous pouvez ajuster la durée, le type d'animation, etc. */
+      }
+    .title{
+        font-family:Arial;
+        color:white;
+        position:relative;
+        font-size:40px;
+    }
+    .lds{
+        margin:0;
+        background-color:white;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius:10px;
+        top:100px;
+        position:absolute;
+        height:470px;
+        width:300px;
+        display:flex;
+        justify-content:center;
+    }
+    .ld1{
+        background-image:url("baobab2.jpg");
+        opacity:1;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        display:flex;
+        justify-content: center;
+    }
+    .ld1n{
+        position:fixed;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        margin: 0;
+        overflow: hidden;
+        display:flex;
+        justify-content: center;
+    }
+    .ld2{
+        top:110px;
+        background-image:url("baobab3.jpg");
+        opacity:1;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        display:flex;
+        justify-content: center;
+    }
+    .ld3{
+        top:220px;
+        background-image:url("lac.jpg");
+        opacity:1;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        display:flex;
+        justify-content: center;
+    }
+    .ld4{
+        top:330px;
+        background-image:url("way.jpg");
+        opacity:1;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        display:flex;
+        justify-content: center;
+    }
+      
+    @keyframes backgroundAnimation {
+        0% {
+          /* Début de l'animation, position de départ */
+          background-position: 0 0;
+        }
+        50% {
+          /* Fin de l'animation, position finale (dans cet exemple, l'image se déplace complètement vers la gauche) */
+          background-position: 100% 0;
+        }
+        100%{
+            background-position: 0 0;
+        }
+    }
+  }
